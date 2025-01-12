@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clothing store
+    </title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Clothing store</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#bestseller">Best seller</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About us</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#cartModal"
+              >
+                <i class="fas fa-shopping-cart"></i>
+                Cart <span class="badge bg-primary cart-count">0</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header id="header" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="/pexels-photo-4427816.jpeg"
+            class="d-block w-100"
+            alt="Store 1"
+          />
+          <div class="carousel-caption">
+            <h1>Latest fashion</h1>
+            <p>Discover our latest collection of modern clothing</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img 
+            src="./sale.jpeg"
+            class="d-block w-100"
+            alt="Store 2"
+          />
+          <div class="carousel-caption">
+            <h1>Exclusive offers</h1>
+            <p>Discounts up to 50% on the new collection</p>
+          </div>
+        </div>
+
+
+        <div class="carousel-item">
+          <img style="height: auto;"
+            src="./kid's.jpg"
+            class="d-block w-100"
+            alt="Store 2"
+          />
+          <div class="carousel-caption">
+            <h1>Our kids</h1>
+            <p>Our kids are the best</p>
+          </div>
+        </div>
+
+
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#header"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#header"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </header>
+
+    <section id="features" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Features</h2>
+        <div class="row g-4">
+          <div class="col-md-3">
+            <div class="feature-card text-center">
+              <i class="fas fa-truck fa-3x mb-3 text-primary"></i>
+              <h4>Fast delivery</h4>
+              <p>Delivery to all provinces</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="feature-card text-center">
+              <i class="fas fa-undo fa-3x mb-3 text-primary"></i>
+              <h4>Free return</h4>
+              <p>Within 14 days of purchase</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="feature-card text-center">
+              <i class="fas fa-lock fa-3x mb-3 text-primary"></i>
+              <h4>Secure payment</h4>
+              <p>Multiple payment methods</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="feature-card text-center">
+              <i class="fas fa-headset fa-3x mb-3 text-primary"></i>
+              <h4>24/7 support</h4>
+              <p>Customer service 24/7</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Our products</h2>
+        <div class="categories text-center mb-4">
+          <button
+            class="btn btn-outline-primary category-btn active me-2"
+            data-category="all"
+          >
+            All
+          </button>
+          <button
+            class="btn btn-outline-primary category-btn me-2"
+            data-category="men"
+          >
+            Men
+          </button>
+          <button
+            class="btn btn-outline-primary category-btn me-2"
+            data-category="women"
+          >
+            Women
+          </button>
+          <button class="btn btn-outline-primary category-btn" data-category="kids">
+            Kids
+          </button>
+        </div>
+        <div class="row g-4" id="products-container">
+
+
+        </div>
+      </div>
+    </section>
+
+    <section id="bestseller" class="py-5 bg-light">
+      <div class="container">
+          <h2 class="text-center mb-5">Best seller</h2>
+        <div class="row g-4" id="bestseller-container">
+
+
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2 class="mb-4">About Us</h2>
+            <p>
+              We are a leading store in the field of fashion, we offer the latest international designs
+              at affordable prices. We always strive to provide the best shopping experience for our customers.
+            </p>
+            <p>We pride ourselves on providing high-quality service and products.</p>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="./about.jpeg"
+              alt="About Store"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-light py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-section">
+              <h3 class="footer-title">Clothing store</h3>
+              <p class="mt-3">
+                We offer the latest fashion and modern clothing at competitive prices and high quality.
+              </p>
+              <div class="contact-info mt-4">
+                <div class="d-flex align-items-center mb-3">
+                  <i class="fas fa-phone-alt me-3"></i>
+                  <span>123-456-789</span>
+                </div>
+                <div class="d-flex align-items-center mb-3">
+                  <i class="fas fa-envelope me-3"></i>
+                  <span>info@clothingstore.com</span>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="fas fa-map-marker-alt me-3"></i>
+                  <span>Shopping street, main city</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-section">
+              <h3 class="footer-title">Quick links</h3>
+              <ul class="footer-links mt-3">
+                <li><a href="#products">Our products</a></li>
+                <li><a href="#bestseller">Best seller</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Terms and conditions</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12">
+            <div class="footer-section">
+              <h3 class="footer-title">Newsletter</h3>
+              <p class="mt-3">
+                Subscribe to our newsletter to get the latest offers and discounts
+              </p>
+              <form class="newsletter-form mt-4">
+                <div class="input-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email"
+                  />
+                  <button class="btn btn-primary" type="submit">Subscribe</button>
+                </div>
+              </form>
+              <div class="social-links mt-4">
+                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom text-center mt-5 pt-4 border-top">
+          <p class="mb-0">All rights reserved &copy; 2024 Clothing store</p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal fade" id="cartModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Shopping cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div id="cart-items"></div>
+            <div class="text-end mt-3">
+              <h5>Total: $<span id="cart-total">0</span></h5>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                Close
+            </button>
+            <button type="button" class="btn btn-primary" id="checkout-btn">
+              Buy
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

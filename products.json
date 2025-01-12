@@ -1,0 +1,67 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": " men product 1 ",
+      "price": 49.99,
+      "category": "men",
+      "image": "./men suit.jpeg"
+    },
+    {
+      "id": 2,
+        "name": "women product 1",
+      "price": 79.99,
+      "category": "women",
+      "image": "./women 1.webp"
+    },
+    {
+      "id": 3,
+      "name": "  kid product 1",
+      "price": 34.99,
+      "category": "kids",
+      "image": "./kid 2.webp"
+    },
+    {
+      "id": 4,
+      "name": "men product 2",
+      "price": 299.99,
+      "category": "men",
+      "image": "./men 1.webp"
+    },
+    {
+      "id": 5,
+      "name": "women product 2",
+      "price": 89.99,
+      "category": "women",
+      "image": "./women 2.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "kid product 2",
+      "price": 24.99,
+      "category": "kids",
+      "image": "./kid 3.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "men product 3",
+      "price": 129.99,
+      "category": "men",
+      "image": "./men 3.webp"
+    },
+    {
+      "id": 8,
+      "name": "women product 3",
+      "price": 59.99,
+      "category": "women",
+      "image": "./women 3.webp"
+    },
+    {
+      "id": 9,
+      "name": "kid product 3",
+      "price": 39.99,
+      "category": "kids",
+      "image": "./kid 4.webp"
+    }
+  ]
+}
